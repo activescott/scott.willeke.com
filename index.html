@@ -1,11 +1,19 @@
+---
+contactServices:
+ - { serviceTitle: "Google+", serviceLink: "http://j.mp/scottatgoogle", logo: "images/google+.png" }
+ - { serviceTitle: "Blog", serviceLink: "http://blog.scott.willeke.com", logo: "images/blog.png" }
+ - { serviceTitle: "stackoverflow", serviceLink: "http://j.mp/scottonstackexchange", logo: "images/stackoverflow.png" }
+ #- { serviceTitle: "Email", serviceLink: "scott at willeke dot com", logo: "images/email.png" }
+ - { serviceTitle: "Github", serviceLink: "http://github.com/activescott", logo: "images/GitHub-Mark-32px.png" }	
+ - { serviceTitle: "LinkedIn", serviceLink: "http://linkedin.com/in/scottwilleke", logo: "images/linkedin.png" }
+ - { serviceTitle: "Twitter", serviceLink: "http://twitter.com/activescott", logo: "images/twitter.png" }
+---
 <!DOCTYPE html>
 <html>
 <head>
 <title>Scott Willeke</title>
 	<meta name="generator" content="scott willeke" />
 	<link rel="stylesheet" href="style/index.css" type="text/css" media="screen">
-	<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/jsrender.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -14,11 +22,11 @@
 			<h1>Scott Willeke</h1>
 			<h2>LIVES HERE</h2>
 			<p>
-				With all the publishing options we have today, I'm not big on a "personal website" so this is to mostly provide links to some of the places you can find me online. See the links below.
+				With all the publishing options available, a "personal website" seems silly, so this is directs you to some of the places you can find me online.
 			</p>
 			<p>
 				I have a background in a startup with <a href="https://en.wikipedia.org/wiki/Data_Dynamics" target="_blank">Data Dynamics</a> where we created BI components for programmers including DynamiCube, ActiveReports, and ActiveAnalysis.
-				Data Dynamics was acquired by <a href="http://www.grapecity.com" target="_blank">GrapeCity</a> where I went on to pitch and create <a href="http://www.ActiveReportsServer.com" target="_blank">ActiveReports Server</a>. I am currently the Technical Product Manager at <a href="http://www.daptiv.com" target="_blank">Daptiv</a> responsible for the Cloud Platform. 
+				Data Dynamics was acquired by <a href="http://www.grapecity.com" target="_blank">GrapeCity</a> where I went on to pitch and create <a href="http://www.ActiveReportsServer.com" target="_blank">ActiveReports Server</a>. I am currently the Technical Product Manager at <a href="http://www.daptiv.com" target="_blank">Daptiv</a> responsible for our platform.
 			</p>
 			<p>Occasionally I do some consulting work on high-tech projects where I can learn new things and add value.</p>
 			<dl>
@@ -32,7 +40,20 @@
 				<img id="photo2" src="images/scottphoto2.png" />
 			</div>
 		</div>
-		<div id="contactTabs"></div>
+		
+		<div id="contactTabs">
+		{% for svc in page.contactServices %}
+			<div class="contactTab">
+				<img class="logo" src="{{ svc.logo }}" />
+				<div class="service">
+					{{ svc.serviceTitle }}
+				</div>
+				<div class="link">
+						<a href="{{ svc.serviceLink }}" target="_blank">{{ svc.serviceLink }}</a>
+				</div>
+			</div>
+		{% endfor %}
+		</div>
 		
 		<!-- red highlight lines just for fun -->
 		<div id="highlightlinesContainerTop">
@@ -50,82 +71,8 @@
 			<img id="highlight_lines_box_b" class="highlighline" src="images/highlight_lines_box_b.png" width="294" height="72" />
 			<img id="highlight_lines_box_br" class="highlighline" src="images/highlight_lines_box_br.png" width="150" height="150" />
 		</div>
+		
 	</div>
-	
 
-
-
-	
 </body>
-
-<script id="contactTabTemplate" type="text/x-jsrender">
-	<div class="contactTab">
-		<img class="logo" src="{{:logo}}" />
-		<div class="service">
-			{{>serviceTitle}}
-		</div>
-		<div class="link">
-			{{if ~hasProtocol(serviceLink) }}
-				<a href="{{:serviceLink}}" target="_blank">{{>~removeProtocol(serviceLink)}}</a>
-			{{else}}
-				{{>serviceLink}}
-			{{/if}}
-		</div>
-	</div>
-</script>
-
-<script type="text/javascript">
-	var alertFallback = false;
-	if (typeof console === "undefined" || typeof console.log === "undefined") {
-	  console = {};
-	  if (alertFallback) {
-	      console.log = function(msg) {
-	           alert(msg);
-	      };
-	  } else {
-	      console.log = function() {};
-	  }
-	}
-
-	var protocols = ["http://", "https://", "mailto:"];
-	
-	$.views.helpers({
-		hasProtocol: function (url) {
-			var foundProtocol = false;
-			
-			protocols.every(function (protocol) {
-				foundProtocol = foundProtocol || url.substr(0, protocol.length) == protocol;
-			});
-			return foundProtocol;
-		},
-		removeProtocol: function(url) {
-			
-			for (var i=0; i < protocols.length; i++) {
-				var protocol=protocols[i];
-				if (url.substr(0, protocol.length) == protocol)
-					return url.substr(protocol.length);
-			}
-			return url;
-		}
-	});
-	
-	var contactServices = [
-		{ serviceTitle: "Twitter", serviceLink: "http://twitter.com/activescott", logo: "images/twitter.png" },
-		{ serviceTitle: "LinkedIn", serviceLink: "http://linkedin.com/in/scottwilleke", logo: "images/linkedin.png" },
-		{ serviceTitle: "Github", serviceLink: "http://github.com/activescott", logo:"images/GitHub-Mark-32px.png" },		
-		{ serviceTitle: "Email", serviceLink: "scott at willeke dot com", logo: "images/email.png" },
-		{ serviceTitle: "stackoverflow", serviceLink: "http://j.mp/scottonstackexchange", logo: "images/stackoverflow.png" },
-		{ serviceTitle: "Blog", serviceLink: "http://blog.scott.willeke.com", logo: "images/blog.png" },
-		{ serviceTitle: "Google+", serviceLink: "http://j.mp/scottatgoogle", logo: "images/google+.png" }
-	];
-	/*due to the rotation they come out in a seemingly reversed order*/
-	contactServices = contactServices.reverse();
-
-	$( "#contactTabs" ).html(
-		$( "#contactTabTemplate" ).render( contactServices )
-	);
-
-</script>
-
-
 </html>

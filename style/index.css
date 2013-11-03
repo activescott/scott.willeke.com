@@ -110,7 +110,7 @@ red highlight lines
 	float:right;
 }
 */
-#highlightlinesContainerTop, #highlightlinesContainerMiddle, #highlightlinesContainerBottom,   {
+#highlightlinesContainerTop, #highlightlinesContainerMiddle, #highlightlinesContainerBottom {
 	white-space:nowrap;
 	overflow:visible;
 	text-align:left;
@@ -122,33 +122,33 @@ red highlight lines
 	position:relative;
 }
 #highlight_lines_box_tl {
-	top:-1025px;
+	top:-950px;
 }
 #highlight_lines_box_t {
-	top:-1175px;
+	top:-1100px;
 	left:150px;
 }
 #highlight_lines_box_tr {
-	top:-1243px;
+	top:-1168px;
 	left:442px;
 }
 #highlight_lines_box_l {
-	top:-1243px;
+	top:-1168px;
 }
 #highlight_lines_box_r {
-	top:-1591px;
+	top:-1516px;
 	left:521px;
 }
 
 #highlight_lines_box_bl {
-	top:-1593px;
+	top:-1518px;
 }
 #highlight_lines_box_b {
-	top:-1665px;
+	top:-1590px;
 	left:150px;
 }
 #highlight_lines_box_br {
-	top:-1815px;
+	top:-1740px;
 	left:442px;
 }
 
