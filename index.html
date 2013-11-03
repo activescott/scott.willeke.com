@@ -44,13 +44,15 @@ contactServices:
 		<div id="contactTabs">
 		{% for svc in page.contactServices %}
 			<div class="contactTab">
-				<img class="logo" src="{{ svc.logo }}" />
-				<div class="service">
-					{{ svc.serviceTitle }}
-				</div>
-				<div class="link">
-						<a href="{{ svc.serviceLink }}" target="_blank">{{ svc.serviceLink }}</a>
-				</div>
+				<a href="{{ svc.serviceLink }}" target="_blank">
+					<img class="logo" src="{{ svc.logo }}" />
+					<div class="service">
+						{{ svc.serviceTitle }}
+					</div>
+					<div class="link">
+						{{ svc.serviceLink }}
+					</div>
+				</a>
 			</div>
 		{% endfor %}
 		</div>

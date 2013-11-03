@@ -1,6 +1,7 @@
 body {
 	font-family: Helvetica;
 	font-size: 16px;
+	color:black;
 }
 #main {
 	background: url('../images/newspaperbackground.png') no-repeat center top;
@@ -164,7 +165,7 @@ Contact Tabs
 	border-top: 1px dashed #999999;
 }
 
-.contactTab > * {
+.contactTab > a > * {
 	margin-left:40px;
 	white-space: nowrap;
 }
@@ -177,24 +178,26 @@ Contact Tabs
 	top:28px;
 }
 
-.contactTab > .service {
+.contactTab .service {
 	font-weight:bold;
-	text-transform:uppercase
+	text-transform:uppercase;
+	text-decoration:none;
+	color:black;
 }
 
-.contactTab > .link > a {
+.contactTab a {
 	color: #000099;
 	text-decoration:none;
 }
 
-.contactTab > .link a:hover {
+.contactTab a:hover {
 	text-decoration:underline;
 }
-.contactTab > .link:hover {
-	
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	transform: scale(1.1);
+
+.contactTab:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 :link    { color: #000099; }   /*just to make things consistent*/
