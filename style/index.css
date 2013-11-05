@@ -6,10 +6,10 @@ body {
 #main {
 	background: url('../images/newspaperbackground.png') no-repeat center top;
 	width: 576px;
-	/*height: ANY*/
+	height: 950px;
 	margin-left:auto;
 	margin-right:auto;
-	overflow:visible;
+	overflow:hidden;
 }
 
 /**********
@@ -116,7 +116,6 @@ red highlight lines
 	overflow:visible;
 	text-align:left;
 	width:1900px;
-	height:100%;
 }
 .highlighline {
 	display:block;
