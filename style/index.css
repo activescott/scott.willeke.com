@@ -203,17 +203,24 @@ Contact Tabs
 :visited { color: #000099; }
 
 #contactTabs {
-	xborder:1px solid green;
+	xxborder:1px solid green;
 	
 	/*rotate text*/
+	/* 
+		576px is width of main content area.
+		307px is width of contactTabs. 
+		so (576-307)/2=135
+		+307 to get the tabs into the area (the rotation rotates them down and to the left so they're outside of the content area)
+		307+135=442px
+	*/
 
-	transform: translate(510px, 0) rotate(90deg);
+	transform: translate(442px, 0) rotate(90deg);
 	transform-origin: left top;
 	
-	-webkit-transform: translate(510px, 0) rotate(90deg);
+	-webkit-transform: translate(442px, 0) rotate(90deg);
 	-webkit-transform-origin: left top;
 
-	-moz-transform: translate(510px, 0) rotate(90deg);
+	-moz-transform: translate(442px, 0) rotate(90deg);
 	-moz-transform-origin: left top;
 	
 }
