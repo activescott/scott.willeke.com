@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bundle install && bundle exec jekyll serve --safe
+bundle install && bundle exec jekyll serve --safe --watch

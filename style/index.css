@@ -21,7 +21,7 @@ content / welcome text
 	width:390px;
 	height:550px;
 	overflow:auto;
-	margin:0;
+	margin:15px 0 0 0;
 	padding:0px 10px 0px 15px;
 	text-align:left;
 }
@@ -122,14 +122,14 @@ red highlight lines
 	position:relative;
 }
 #highlight_lines_box_tl {
-	top:-950px;
+	top:-905px;
 }
 #highlight_lines_box_t {
-	top:-1100px;
+	top:-1055px;
 	left:150px;
 }
 #highlight_lines_box_tr {
-	top:-1168px;
+	top:-1123px;
 	left:442px;
 }
 #highlight_lines_box_l {
