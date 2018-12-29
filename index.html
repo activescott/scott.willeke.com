@@ -1,79 +1,232 @@
 ---
 contactServices:
- - { serviceTitle: "Blog", serviceLink: "http://blog.scott.willeke.com", logo: "images/blog.png" }
- - { serviceTitle: "stackoverflow", serviceLink: "http://j.mp/scottstack", logo: "images/stackoverflow.png" }
- #- { serviceTitle: "Email", serviceLink: "scott at willeke dot com", logo: "images/email.png" }
- - { serviceTitle: "Github", serviceLink: "http://github.com/activescott", logo: "images/GitHub-Mark-32px.png" }	
- - { serviceTitle: "LinkedIn", serviceLink: "http://linkedin.com/in/scottwilleke", logo: "images/linkedin.png" }
- - { serviceTitle: "Twitter", serviceLink: "http://twitter.com/activescott", logo: "images/twitter.png" }
+  - {
+      serviceTitle: "GitHub",
+      serviceLink: "http://github.com/activescott",
+      logo: "images/GitHub-Mark-32px.png",
+    }
+  - {
+      serviceTitle: "Stack Overflow",
+      serviceLink: "http://j.mp/scottstack",
+      logo: "images/stackoverflow.png",
+    }
+  - {
+      serviceTitle: "LinkedIn",
+      serviceLink: "http://linkedin.com/in/scottwilleke",
+      logo: "images/linkedin.png",
+    }
+#- { serviceTitle: "Blog", serviceLink: "http://blog.scott.willeke.com", logo: "images/blog.png" }
+#- { serviceTitle: "Email", serviceLink: "scott at willeke dot com", logo: "images/email.png" }
+#- { serviceTitle: "Twitter", serviceLink: "http://twitter.com/activescott", logo: "images/twitter.png" }
 ---
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Scott Willeke</title>
-	<meta name="generator" content="scott willeke" />
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="stylesheet" href="style/index.css" type="text/css" media="screen">
-	{% include ganalytics-inc.html %}
-</head>
+  <head>
+    <title>Scott Willeke</title>
+    <meta name="generator" content="scott willeke" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="style/index.css"
+      type="text/css"
+      media="screen"
+    />
+    {% include ganalytics-inc.html %}
+  </head>
 
-<body>
-	<div id="main">
-		<div id="content">
-			<h1>Scott Willeke</h1>
-			<h2>LIVES HERE</h2>
-			<p>
-				Currently I'm a Product Manager at <a href="https://www.smartsheet.com/" target="_blank">Smartsheet</a> responsible for product integrations. Previously I was at Amazon Web Services working on mobile identity stuff and prior to that I led the project scheduling capability and core platform initiatives at <a href="http://www.daptiv.com/" target="_blank">Daptiv</a>.
-			</p>
-			<p>
-				My background is creating products for developers beginning with the startup <a href="https://en.wikipedia.org/wiki/Data_Dynamics" target="_blank">Data Dynamics</a> where we created products now sold under GrapeCity including <a href="http://activereports.grapecity.com/" target="_blank">ActiveReports</a> and DynamiCube. Data Dynamics was acquired by <a href="http://www.grapecity.com" target="_blank">GrapeCity</a> where I went on to pitch, build, and launch <a href="http://activereports.grapecity.com/Products/ActiveReportsServer/" target="_blank">ActiveReports Server</a>.
-			</p>
-			<dl>
-				<dt>Expertise &amp; Skills</dt>
-				<dd>Product Management, Leadership, Agile Facilitation/Project Management, Data Visualization, Programming.</dd>
-				<dt>Availability</dt>
-				<dd>Not currently seeking opportunities.</dd>
-			</dl>
-			<div id="photos">
-				<img id="photo1" src="images/scottphoto1.png" />
-				<img id="photo2" src="images/scottphoto2.png" />
-			</div>
-		</div>
-		
-		<div id="contactTabs">
-		{% for svc in page.contactServices %}
-			<div class="contactTab">
-				<a href="{{ svc.serviceLink }}" target="_blank">
-					<img class="logo" src="{{ svc.logo }}" />
-					<div class="service">
-						{{ svc.serviceTitle }}
-					</div>
-					<div class="link">
-						{{ svc.serviceLink }}
-					</div>
-				</a>
-			</div>
-		{% endfor %}
-		</div>
-		
-		<!-- red highlight lines just for fun -->
-		<div id="highlightlinesContainerTop">
-			<img id="highlight_lines_box_tl" class="highlighline" src="images/highlight_lines_box_tl.png" width="150" height="150" />
-			<img id="highlight_lines_box_t" class="highlighline" src="images/highlight_lines_box_t.png" width="292" height="68" />
-			<img id="highlight_lines_box_tr" class="highlighline" src="images/highlight_lines_box_tr.png" width="150" height="150" />
-		</div>
-		<div id="highlightlinesContainerMiddle">
-			<img id="highlight_lines_box_l" class="highlighline" src="images/highlight_lines_box_l.png" width="109" height="348" />
-			<img id="highlight_lines_box_r" class="highlighline" src="images/highlight_lines_box_r.png" width="71" height="350" />
-			
-		</div>
-		<div id="highlightlinesContainerBottom">
-			<img id="highlight_lines_box_bl" class="highlighline" src="images/highlight_lines_box_bl.png" width="150" height="150" />
-			<img id="highlight_lines_box_b" class="highlighline" src="images/highlight_lines_box_b.png" width="294" height="72" />
-			<img id="highlight_lines_box_br" class="highlighline" src="images/highlight_lines_box_br.png" width="150" height="150" />
-		</div>
-		
-	</div>
+  <body>
+    <div id="main">
+      <div id="content">
+        <h1>Scott Willeke</h1>
+        <h2>Product Guy</h2>
+        <p>
+          Currently I'm Director of Product at
+          <a href="https://www.smartsheet.com/" target="_blank">Smartsheet</a>
+          where I launched Smartsheet's Automation offering and am responsible
+          for automation & integrations. Previously I was at Amazon Web Services
+          working on mobile identity stuff. Prior to that I led the project
+          scheduling capability and core platform initiatives at
+          <a href="http://www.daptiv.com/" target="_blank">Daptiv</a>.
+        </p>
+        <p>
+          My background is creating products for developers beginning with the
+          startup
+          <a href="https://en.wikipedia.org/wiki/Data_Dynamics" target="_blank"
+            >Data Dynamics</a
+          >
+          where we created products now sold under GrapeCity including
+          <a href="http://activereports.grapecity.com/" target="_blank"
+            >ActiveReports</a
+          >
+          and DynamiCube. Data Dynamics was acquired by
+          <a href="http://www.grapecity.com" target="_blank">GrapeCity</a> where
+          I went on to pitch, build, and launch
+          <a
+            href="http://activereports.grapecity.com/Products/ActiveReportsServer/"
+            target="_blank"
+            >ActiveReports Server</a
+          >.
+        </p>
+        <dl>
+          <dt>Expertise &amp; Skills</dt>
+          <dd>
+            Product Management, Leadership, Customer Development, Agile
+            Facilitation/Project Management, Programming.
+          </dd>
+          <dt>Availability</dt>
+          <dd>Not looking, but open to discussions.</dd>
+        </dl>
+        <div id="photos">
+          <img id="photo1" src="images/scottphoto1.png" />
+          <img id="photo2" src="images/scottphoto2.png" />
+        </div>
+      </div>
 
-</body>
+      <div id="contactTabs">
+        {% for svc in page.contactServices %}
+        <div class="contactTab">
+          <a href="{{ svc.serviceLink }}" target="_blank">
+            <img class="logo" src="{{ svc.logo }}" />
+            <div class="service">{{ svc.serviceTitle }}</div>
+            <div class="link">{{ svc.serviceLink }}</div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- red highlight lines just for fun -->
+      <div id="highlightlinesContainerTop">
+        <img
+          id="highlight_lines_box_tl"
+          class="highlighline"
+          src="images/highlight_lines_box_tl.png"
+          width="150"
+          height="150"
+        />
+        <img
+          id="highlight_lines_box_t"
+          class="highlighline"
+          src="images/highlight_lines_box_t.png"
+          width="292"
+          height="68"
+        />
+        <img
+          id="highlight_lines_box_tr"
+          class="highlighline"
+          src="images/highlight_lines_box_tr.png"
+          width="150"
+          height="150"
+        />
+      </div>
+      <div id="highlightlinesContainerMiddle">
+        <img
+          id="highlight_lines_box_l"
+          class="highlighline"
+          src="images/highlight_lines_box_l.png"
+          width="109"
+          height="348"
+        />
+        <img
+          id="highlight_lines_box_r"
+          class="highlighline"
+          src="images/highlight_lines_box_r.png"
+          width="71"
+          height="350"
+        />
+      </div>
+      <div id="highlightlinesContainerBottom">
+        <img
+          id="highlight_lines_box_bl"
+          class="highlighline"
+          src="images/highlight_lines_box_bl.png"
+          width="150"
+          height="150"
+        />
+        <img
+          id="highlight_lines_box_b"
+          class="highlighline"
+          src="images/highlight_lines_box_b.png"
+          width="294"
+          height="72"
+        />
+        <img
+          id="highlight_lines_box_br"
+          class="highlighline"
+          src="images/highlight_lines_box_br.png"
+          width="150"
+          height="150"
+        />
+      </div>
+    </div>
+
+    <script>
+      const topRect = document
+        .querySelector("#highlightlinesContainerTop")
+        .getBoundingClientRect()
+      const midRect = document
+        .querySelector("#highlightlinesContainerMiddle")
+        .getBoundingClientRect()
+      const bottomRect = document
+        .querySelector("#highlightlinesContainerBottom")
+        .getBoundingClientRect()
+      let allImages = document.querySelectorAll("img")
+
+      function qs(selector) {
+        return document.querySelector(selector)
+      }
+
+      function bottomOf(el) {
+        return el.getBoundingClientRect().bottom
+      }
+
+      function leftOf(el) {
+        return el.getBoundingClientRect().x
+      }
+
+      function rightOf(el) {
+        return el.getBoundingClientRect().right
+      }
+
+      function widthOf(el) {
+        return el.getBoundingClientRect().width
+      }
+
+      function heightOf(el) {
+        return el.getBoundingClientRect().height
+      }
+
+      const main = qs("#main")
+      const tl = qs("#highlight_lines_box_tl")
+      const t = qs("#highlight_lines_box_t")
+      const tr = qs("#highlight_lines_box_tr")
+      const tops = [tl, t, tr]
+
+      const l = qs("#highlight_lines_box_l")
+      const r = qs("#highlight_lines_box_r")
+      const mids = [l, r]
+
+      const bl = qs("#highlight_lines_box_bl")
+      const b = qs("#highlight_lines_box_b")
+      const br = qs("#highlight_lines_box_br")
+      const bottoms = [bl, b, br]
+      const lines = [...tops, ...mids, ...bottoms]
+      console.log("lines:", lines)
+      lines.forEach(img => (img.style.display = "block"))
+
+      // top lines:
+      tops.forEach(img => (img.style.top = -30 + "px"))
+      tl.style.left = leftOf(main) + "px"
+      t.style.left = rightOf(tl) + "px"
+      tr.style.left = rightOf(t) + "px"
+      // mid lines:
+      mids.forEach(img => (img.style.top = bottomOf(tl) + "px"))
+      r.style.left = rightOf(tr) - widthOf(r) + "px"
+      // bottom lines
+      bottoms.forEach(img => (img.style.top = bottomOf(l) + "px"))
+      b.style.left = rightOf(bl) + "px"
+      br.style.left = rightOf(r) - widthOf(br) + "px"
+      b.style.top = bottomOf(br) - heightOf(b) + "px"
+    </script>
+  </body>
 </html>

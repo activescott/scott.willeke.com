@@ -60,96 +60,38 @@ content / photos
 	display:none;
 	margin-top: 60px;
 }
-/**********
-red highlight lines
-**********/
-/* using floats was too much trouble. PUshed content around, margin hacks to compensate mis-aligned lines, etc.
-.highlightlinesContainer {
-	xposition:relative;
-	xtop:-700px;
-	background:transparent;
-	border:1px solid lime;
-	margin-left:auto;
-	margin-right:auto;
-	width:694px;
-	height:1200px;
-}
-.highlighline {
-	display:inline-block;
-	margin:0;
-	padding:0;
-}
-#highlight_lines_box_tl {
-	float: left;
-}
-#highlight_lines_box_t {
-	float: left;
-	margin-bottom:-100px;
-}
-#highlight_lines_box_tr {
-	float:right;
-}
-#highlight_lines_box_l {
-	clear:left;
-	float:left;
-	margin-right:-100px;
-}
-#highlight_lines_box_bl {
-	clear:left;
-	float:left;
-}
-#highlight_lines_box_r {
-	clear:right;
-	float:right;
-	margin-left:-100px;
-}
-#highlight_lines_box_b {
-	float:right;
-	margin-top:-100px;
-}
-#highlight_lines_box_br {
-	float:right;
-}
-*/
 #highlightlinesContainerTop, #highlightlinesContainerMiddle, #highlightlinesContainerBottom {
 	white-space:nowrap;
 	overflow:visible;
 	text-align:left;
 	width:1900px;
+	x-border: 1px solid greenyellow
 }
 .highlighline {
-	display:block;
-	position:relative;
+	x-display:block;
+	position: absolute; /*relative allows the images to at least self-align horizontally*/
+	display:none;
+}
+
+#highlightlinesContainerTop > img {
+	vertical-align: top;
 }
 #highlight_lines_box_tl {
-	top:-905px;
 }
 #highlight_lines_box_t {
-	top:-1055px;
-	left:150px;
 }
 #highlight_lines_box_tr {
-	top:-1123px;
-	left:442px;
 }
 #highlight_lines_box_l {
-	top:-1168px;
 }
 #highlight_lines_box_r {
-	top:-1516px;
-	left:521px;
 }
 
 #highlight_lines_box_bl {
-	top:-1518px;
 }
 #highlight_lines_box_b {
-	top:-1590px;
-	left:150px;
 }
 #highlight_lines_box_br {
-	top:-1740px;
-	left:442px;
 }
 
 /**********
@@ -203,24 +145,25 @@ Contact Tabs
 :visited { color: #000099; }
 
 #contactTabs {
-	xxborder:1px solid green;
+	x-border:1px solid green;
 	
 	/*rotate text*/
 	/* 
-		576px is width of main content area.
-		307px is width of contactTabs. 
-		so (576-307)/2=135
-		+307 to get the tabs into the area (the rotation rotates them down and to the left so they're outside of the content area)
-		307+135=442px
+		550px is width of main content area.
+		184px is width of contact tabs (after rotating 90deg)
+		so (550-184)/2=183
+		+184 to get the tabs into the area (the rotation rotates them down and to the left so they're outside of the content area)
+		184+183=376
 	*/
 
-	transform: translate(442px, 0) rotate(90deg);
+	transform: translate(376px, 0) rotate(90deg);
 	transform-origin: left top;
 	
+	/*
 	-webkit-transform: translate(442px, 0) rotate(90deg);
 	-webkit-transform-origin: left top;
 
 	-moz-transform: translate(442px, 0) rotate(90deg);
 	-moz-transform-origin: left top;
-	
+	*/
 }
