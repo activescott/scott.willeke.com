@@ -41,13 +41,20 @@ contactServices:
         <h1>Scott Willeke</h1>
         <h2>Product Guy</h2>
         <p>
-          Currently I'm Director of Product at
+          Currently I'm Sr. Director of Engineering at
           <a href="https://www.smartsheet.com/" target="_blank">Smartsheet</a>
-          where I launched Smartsheet's Automation offering and am responsible
-          for automation & integrations. Previously I was at Amazon Web Services
-          working on mobile identity stuff. Prior to that I led the project
-          scheduling capability and core platform initiatives at
-          <a href="http://www.daptiv.com/" target="_blank">Daptiv</a>.
+          where I support teams building our Enterprise Administration
+          capabilities and bringing our Access & Identity services from scrappy
+          startup technology to a scalable performant architecture that supports
+          millions of users with predictable performance and enabling rapid
+          incremental delivery. Before that I was a Director in our Product
+          Management organization supporting teams that envisioned and
+          launched Smartsheet's Automated Workflows offering, built and operated
+          Notifications, core experience navigation, and many integrations.
+          Previously I was at Amazon Web Services working on mobile identity
+          stuff. Prior to that I led the project scheduling capability and core
+          platform initiatives at
+          <a href="http://www.daptiv.com/" target="_blank">Daptiv (now part of Planview)</a>.
         </p>
         <p>
           My background is creating products for developers beginning with the
@@ -212,18 +219,18 @@ contactServices:
       const bottoms = [bl, b, br]
       const lines = [...tops, ...mids, ...bottoms]
       console.log("lines:", lines)
-      lines.forEach(img => (img.style.display = "block"))
+      lines.forEach((img) => (img.style.display = "block"))
 
       // top lines:
-      tops.forEach(img => (img.style.top = -30 + "px"))
+      tops.forEach((img) => (img.style.top = -30 + "px"))
       tl.style.left = leftOf(main) + "px"
       t.style.left = rightOf(tl) + "px"
       tr.style.left = rightOf(t) + "px"
       // mid lines:
-      mids.forEach(img => (img.style.top = bottomOf(tl) + "px"))
+      mids.forEach((img) => (img.style.top = bottomOf(tl) + "px"))
       r.style.left = rightOf(tr) - widthOf(r) + "px"
       // bottom lines
-      bottoms.forEach(img => (img.style.top = bottomOf(l) + "px"))
+      bottoms.forEach((img) => (img.style.top = bottomOf(l) + "px"))
       b.style.left = rightOf(bl) + "px"
       br.style.left = rightOf(r) - widthOf(br) + "px"
       b.style.top = bottomOf(br) - heightOf(b) + "px"
