@@ -1,0 +1,50 @@
+I hereby claim:
+
+  * I am an admin of https://scott.willeke.com
+  * I am activescott (https://keybase.io/activescott) on keybase.
+  * I have a public key ASBCbRSt_upqAXtypu9OTXcv1mE_9wcRj0ClegNEwSULQQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012066befa041139c4e005ae9caaf9ad906b884861250cff8521b124e17a131c7b0e0a",
+      "host": "keybase.io",
+      "kid": "0120426d14adfeea6a017b72a6ef4e4d772fd6613ff707118f40a57a0344c1250b410a",
+      "uid": "862e03c0842654623c9efbd582fcd519",
+      "username": "activescott"
+    },
+    "merkle_root": {
+      "ctime": 1669431507,
+      "hash": "dc45ce749c83f7adb4b947b1d9fe92bb06896003260c023ca13ffdd05cbb7cbabbe70d0a828210b02fbf158b6af5a56ae6052feecaf11ce621df7c3bfa96753a",
+      "hash_meta": "7af34de343fbd6e24e8568c2770fe81a042d055535bcecf0a649e69245e410df",
+      "seqno": 23616785
+    },
+    "service": {
+      "entropy": "/bSdOgVNPR7HD3POOFXokFA5",
+      "hostname": "scott.willeke.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1669431650,
+  "expire_in": 504576000,
+  "prev": "612eae10bad0c20cbc5dd233a886b30b20c9654132ed38e415be564f6afd51d8",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQm0Urf7qagF7cqbvTk13L9ZhP/cHEY9ApXoDRMElC0EKp3BheWxvYWTESpcCHcQgYS6uELrQwgy8XdIzqIazCyDJZUEy7TjkFb5WT2r9UdjEIB2Vy38ekdZ/+ngwJ+hPnA7wL403RwNQmwXa4GttwPfNAgHCo3NpZ8RAhQThz4Gyf9IcAA/CzH7+IjQ/OvnuqwRBmzGpd3w2nviikSa3gngG31aqHGb7fHdb07nl9dd5SlaaSPp4A9DJDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBOPsvQoaydocx670QMddFAy+yKt8QfEdOC/QroPqk1Ao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/activescott
