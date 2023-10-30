@@ -1,3 +1,0 @@
-# https://jekyllrb.com/docs/configuration/default/
-safe                : true
-include             : [".well-known"]
