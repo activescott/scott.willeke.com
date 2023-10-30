@@ -4,7 +4,7 @@
 
 I started my career in a startup building software for developers at [Data Dynamics](https://en.wikipedia.org/wiki/Data_Dynamics) (acquired by [Grape City](https://www.grapecity.com/)). Most recently I was CTO at Vouched.id leading Product & Engineering for the team using Computer Vision AI to verify people's identity. Before that I was Sr. Director of Product & Engineering at [Smartsheet](https://www.smartsheet.com/) supporting the teams building and operating the core platform (Auth, Administration). Over six years, I launched capabilities such as Automated Workflows, Conversations, Home, dozens of integrations, and more. I was also a Product Manager at Amazon Web Services (AWS), Daptiv (acquired by Plan View).
 
-{|<} I love to build things - specially out of code and especially with others. You can see some of my open source activity on [![Github](/_images/github-gray.svg) Github](github.com/activescott) or [![Stack Overflow](/_images/stack-overflow-gray.svg) Stack Overflow](https://stackoverflow.com/users/51061/scott-willeke).
+{|<} I love to build things - specially out of code and especially with others. You can see some of my open source activity on [![Github](/_images/github-gray.svg) Github](https://github.com/activescott) or [![Stack Overflow](/_images/stack-overflow-gray.svg) Stack Overflow](https://stackoverflow.com/users/51061/scott-willeke).
 
 ## Availability
 
